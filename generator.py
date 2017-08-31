@@ -44,6 +44,7 @@ def circle(rad, x_pos, y_pos, num_seg):
 
 	deg_ind = 0.0
 
+	print deg_segment
 	print_point(x_next, y_next)
 
 	for i in range(0, int(num_seg)):
@@ -54,7 +55,10 @@ def circle(rad, x_pos, y_pos, num_seg):
 		y_ind = float(rad) * cos(deg_ind)
 
 		x_next = float(x_pos) + x_ind
-		y_next = float(x_pos) + y_ind
+		y_next = float(y_pos) + y_ind
+
+#		x_next = x_ind
+#		y_next = y_ind
 
 		print_point(x_next, y_next)
 
