@@ -105,10 +105,10 @@ if str(sys.argv[1]) == "-f":
 	index = 2
 	if str(sys.argv[2]) == "-d":
 		index = 4
-		filestr = "./" + str(sys.argv[3])
+		filestr = "./gcode/" + str(sys.argv[3])
 	else:
 		for i in range(0,100):
-			filestr = './generated{}.gcode'.format(i)
+			filestr = './gcode/generated{}.gcode'.format(i)
 			if os.path.isfile(filestr):
 				print "file exists"
 				continue
