@@ -26,9 +26,9 @@ import os.path
 def print_point(x_next, y_next):
 	if write:
 		with open(filestr, "a+") as file:
-			file.write("G1 X{} Y{}\n".format(x_next, y_next))
+			file.write("G1 X{} Y{} H{} T{}\n".format(x_next, y_next, 2200, 1300))
 	else:
-		print "G1 X{} Y{}".format(x_next, y_next)
+		print "G1 X{} Y{} H{} T{}".format(x_next, y_next, 2200, 1300)
 
 def circle(rad, x_pos, y_pos, num_seg):
 
